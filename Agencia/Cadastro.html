@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro - Tropical</title>
+  <link rel="stylesheet" href="agência.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="Imagens/icone.png" type="image/x-icon" />
+</head>
+
+<body class="contato">
+  <div class="container-fluid" id="principal">
+    <header class="row menu">
+      <nav class="navbar navbar-expand-lg navbar-ligth bg-primary">
+        <div class="col-1 logo">
+          <img src="Imagens/Logo Agência de Viagens.png" alt="Logo da empresa" />
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="col justify-content-center collapse navbar-collapse" id="navbarNav">
+          <ul class="text-center col justify-content-center  navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="Destino.html">Destino</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="promocoes.html">Promoções</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="Contato.html">Contato</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="Sobre.html">Sobre Nós</a>
+            </li>
+          </ul>
+
+          <div class="row btnHeader">
+            <a class="btn btn-primary active margin-left-1" aria-current="page" href="#">Cadastre-se</a>
+            <a class="btn btn-primary active margin-left-1" aria-current="page" href="#">Login</a>
+          </div>
+
+
+
+
+
+        </div>
+
+  </div>
+
+  </nav>
+  </header>
+
+  <main>
+    <div class="container formulario">
+      <form>
+        <div class="row">
+          <div class="mb-3 col">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" placeholder="Insira seu nome" class="form-control" id="nome" aria-describedby="emailHelp"
+              required>
+          </div>
+          <div class="mb-3 col">
+            <label for="telefone" class="form-label">Telefone</label>
+            <input type="tel" placeholder="(00) 0000-0000" class="form-control" id="telefone" required>
+          </div>
+          <div class="mb-3 col">
+            <label for="Data de Nascimento" class="form-label">Data de Nascimento</label>
+            <input type="date" placeholder="Insira seu telefone" class="form-control" id="Data de Nascimento" required>
+          </div>
+        </div>
+        <div class="mb-1 row">
+          <div class="mb-3 col-5">
+            <label for="cep" class="form-label">cep</label>
+            <input type="text" pattern=[0-9]{5}-[0-9]{3} placeholder="Insira seu telefone" class="form-control" id="cep"
+              required>
+          </div>
+          <div class="row">
+            <label for="email" class="form-label">Email </label>
+            <input id="email" class=" col-6 pl-3" type="email" placeholder="seuemail@exemplo.com" class="form-control"
+              aria-describedby="emailHelp" required>
+            <div id="emailHelp" class="form-text">Nunca compartilharemos seu email</div>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="senha" class="form-label">senha </label>
+            <input id="senha" class=" col-2 " type="email" placeholder="insira sua senha" class="form-control" 
+              aria-describedby="senha" required>
+        </div>
+        <button type="submit button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+          aria-controls="collapseExample" class="btn btn-primary mt-2">Cadastrar</button>
+
+        <div class="collapse mt-1" id="collapseExample">
+          <div class="card alert alert-success text-center card-body">
+            Dados enviados com sucesso
+          </div>
+        </div>
+      </form>
+
+    </div>
+
+  </main>
+  <footer class="bg-dark  text-white text-center mt-1 footerAlinhado row">
+    Tropicalagencia@exemplo.com
+    <br>
+    Tel : (00) 0000-0000
+    <div class="linhaFooter">
+      &copy; Tropical Todos os direitos reservados
+    </div>
+  </footer>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</html>

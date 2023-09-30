@@ -1,0 +1,76 @@
+body{
+    background-image:url(Imagens/tropical.png) ;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
+    
+}
+.contato{
+    background-image: none;
+    min-height: 115vh; 
+}
+ .logo img{
+     width: 15vh; 
+    height: 14vh;
+} 
+header a{
+    text-decoration: none;
+}
+ .img{
+    height: 170px;
+} 
+.img-card{
+    height: 295px;
+}
+.menu{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0px;
+}
+.menu a:hover{
+   color: white !important ; 
+}
+main{
+ margin-top: 18vh;
+}
+.formulario{
+    border: 1px solid ;
+}
+.btnpromo{
+     border-radius: 20px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+ footer{
+   justify-content: center ;
+} 
+.linhaFooter{
+    border-top: 1px solid rgb(0, 119, 255);
+}
+ .footerAlinhado{
+     position: fixed;
+     bottom: 0px;
+    width: 100%; 
+} 
+.btnHeader{
+    margin-left: 1px !important;
+    margin-right: 2px !important;
+}
+.btnHeader a{
+    padding: 1px!important;
+    margin-top: 5px;
+}
+#email{
+    margin-left: 10px;
+}
+#senha{
+    margin-left: 10px;
+}
+
+
+  
+ 
+
+
+
