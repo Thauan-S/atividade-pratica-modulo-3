@@ -14,9 +14,19 @@ public class ClienteDAO {
 	public void CadastrarCliente(Cliente cliente) {
 		Connection conn = null;
 		PreparedStatement pstm = null;
+		PreparedStatement ClientePstm=null;
 		String sql = "insert into cliente(Nome,Telefone,DataNascimento,Cep,Email,Senha) values(?,?,?,?,?,?)";
+		String ClienteQuery="select count(*) from cliente where nome =?";
 		try {
 			conn = ConectionFactory.conectar();
+			ClientePstm=conn.prepareStatement(ClienteQuery);
+			ClientePstm.setString(1, cliente.getNome());
+			ResultSet CliResultset=ClientePstm.executeQuery();
+			if(CliResultset.next() && CliResultset.getInt(1)>0) {
+				System.out.println("O Nome de Usuário é inválido, escolha outro");
+				return;
+			}
+			
 			pstm = conn.prepareStatement(sql);
 			pstm.setString(1, cliente.getNome());
 			pstm.setString(2, cliente.getTelefone());
